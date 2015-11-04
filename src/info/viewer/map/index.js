@@ -71,12 +71,13 @@ function build(root, map) {
                 }
             break;
 
-            case 'selector':
-            case 'declaration':
-            case 'comment':
-            case 'spaces':
-                for (var i = node.start; i < node.start + node.length; i++) {
-                    result += getToken(i);
+            default:
+                if (Array.isArray(node.content)) {
+                    result += node.content.map(walk).join('');
+                } else {
+                    for (var i = node.start; i < node.start + node.length; i++) {
+                        result += getToken(i);
+                    }
                 }
             break;
         };
