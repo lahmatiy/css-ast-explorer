@@ -1,10 +1,17 @@
 {
   "name": "css-ast-explorer",
   "title": "CSS AST Explorer",
+  "description": "AST explorer for css-parser (https://github.com/lahmatiy/css-parser)",
+  "repository": "lahmatiy/css-ast-explorer",
+  "license": "MIT",
   "scripts": {
+    "start": "basis server"
   },
   "dependencies": {
     "css-parser": "lahmatiy/css-parser",
-    "basisjs": "basisjs/basisjs"
+    "basisjs": "basisjs/basisjs#1.5"
+  },
+  "devDependencies": {
+    "basisjs-tools": "1.5"
   }
 }
