@@ -1,0 +1,22 @@
+.tab
+{
+    display: inline-block;
+    padding: 8px 16px;
+    background: #F8F8F8;
+    cursor: pointer;
+}
+.tab + .tab {
+    margin-left: 1px;
+}
+.tab:hover
+{
+    background: #E0E0E0;
+}
+.tab_selected,
+.tab_selected:hover
+{
+    background: #E8E8E8;
+    cursor: default;
+    padding-bottom: 9px;
+    margin-bottom: -1px;
+}

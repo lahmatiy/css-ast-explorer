@@ -1,0 +1,25 @@
+HTML,
+BODY
+{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+
+  background: white;
+  color: black;
+  font-family: Arial;
+  font-size: small;
+}
+
+.layout
+{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.details
+{
+  width: 50%;
+}

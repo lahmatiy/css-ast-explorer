@@ -1,0 +1,15 @@
+.editor
+{
+    box-sizing: border-box;
+    width: 50%;
+    padding: 10px;
+    
+    outline: none;
+    border: none;
+    border-right: 1px solid #666;
+    resize: none;
+
+    font-family: Consolas, Monaco, Courier New, monospace;
+    font-size: 14px;
+    line-height: 1.5;
+}

@@ -1,0 +1,77 @@
+.map
+{
+    min-height: 100%;
+    padding: 10px;
+
+    font-family: Consolas, Monaco, Courier New, monospace;
+    font-size: 14px;
+    line-height: 21px;
+    white-space: pre-wrap;
+}
+
+.map [class~="symbols"]
+{
+    opacity: .4;
+    font-size: 75%;
+    padding-top: 2px;
+}
+.map [class~="node"]
+{
+    padding: 4px 0 3px;
+    cursor: pointer;
+}
+
+.map [class~="node-stylesheet"]
+{
+    background: rgb(234, 196, 247);
+}
+.map [class~="node-ruleset"]
+{
+    position: relative;
+    outline: 1px solid rgba(0, 0, 0, .4);
+    background: rgb(182, 207, 182);
+}
+.map [class~="node-atrule"]
+{
+    position: relative;
+    outline: 1px solid rgba(0, 0, 0, .4);
+    background: rgb(240, 230, 162);
+}
+.map [class~="node-selector"]
+{
+    background: rgb(196, 211, 247);
+}
+.map [class~="node-block"]
+{
+}
+.map [class~="node-declaration"]
+{
+    border-left: 1px solid rgba(0, 0, 0, .2);
+    background: rgba(255, 255, 255, .4);
+}
+.map [class~="node-spaces"],
+.map [class~="node-comment"]
+{
+    background: #E0E0E0;
+}
+
+.map [class~="hover"]
+{
+    position: relative;
+    z-index: 1;
+    box-shadow: none;
+    outline: 2px solid green;
+    border-color: transparent;
+}
+.map [class~="hover"] [class~="node"] {
+    box-shadow: none;
+    outline: none;
+    border-color: transparent;
+    background: rgba(255, 255, 255, .2);
+}
+
+/*  
+    background: rgb(247, 196, 196);
+  background: rgb(247, 224, 196);
+  background: rgb(196, 236, 247);
+*/

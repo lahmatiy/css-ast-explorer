@@ -1,0 +1,10 @@
+.viewer
+{
+    padding: 10px;
+
+    background: #E8E8E8;
+    font-family: Consolas, Monaco, Courier New, monospace;
+    font-size: 14px;
+    line-height: 18px;
+    white-space: pre;
+}

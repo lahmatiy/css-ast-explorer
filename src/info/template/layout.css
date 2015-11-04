@@ -1,0 +1,17 @@
+.layout
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.tabs
+{
+    margin: 1px;
+}
+.content
+{
+    flex: 2;
+    overflow: auto;
+    background: #E8E8E8;
+}

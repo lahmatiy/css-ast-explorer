@@ -1,0 +1,9 @@
+{
+  "name": "CSS AST Explorer",
+  "scripts": {
+  },
+  "dependencies": {
+    "css-parser": "https://github.com/lahmatiy/css-parser",
+    "basisjs": "https://github.com/basisjs/basisjs"
+  }
+}
