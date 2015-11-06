@@ -80,8 +80,12 @@ function build(root, map) {
             break;
 
             default:
-                for (var i = node.start; i < node.start + node.length; i++) {
-                    result += getToken(i);
+                if (Array.isArray(node.content)) {
+                    result += node.content.map(walk).join('');
+                } else {
+                    for (var i = node.start; i < node.start + node.length; i++) {
+                        result += getToken(i);
+                    }
                 }
         };
 
