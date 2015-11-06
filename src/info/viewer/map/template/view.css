@@ -37,7 +37,8 @@
     outline: 1px solid rgba(0, 0, 0, .4);
     background: rgb(240, 230, 162);
 }
-.map [class~="node-selector"]
+.map [class~="node-selector"],
+.map [class~="node-atrule-params"]
 {
     background: rgb(196, 211, 247);
 }
@@ -52,7 +53,10 @@
 .map [class~="node-spaces"],
 .map [class~="node-comment"]
 {
+    position: relative;
+    outline: 1px solid rgba(0, 0, 0, .4);
     background: #E0E0E0;
+    color: #666;
 }
 
 .map [class~="hover"]

@@ -34,9 +34,17 @@ function build(root, map) {
             case 'atrule':
                 var offset = node.start;
 
-                for (var i = node.start; i < node.start + node.paramsLength + 1; i++) {
-                    result += getToken(i);
+                for (var i = 0; i < node.paramsLength + 1; i++) {
+                    if (i === 1) {
+                        result += '<span class="node node-atrule-params" type="node-atrule-params" event-mouseenter="enter" event-mouseleave="leave">';
+                    }
+
+                    result += getToken(node.start + i);
                     offset++;
+                }
+
+                if (node.paramsLength) {
+                    result += '</span>';
                 }
 
                 if (node.block) {
@@ -71,14 +79,10 @@ function build(root, map) {
                 }
             break;
 
-            case 'selector':
-            case 'declaration':
-            case 'comment':
-            case 'spaces':
+            default:
                 for (var i = node.start; i < node.start + node.length; i++) {
                     result += getToken(i);
                 }
-            break;
         };
 
         return result + '</span>';

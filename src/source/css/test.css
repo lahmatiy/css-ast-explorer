@@ -1,9 +1,21 @@
 .a {
-  a:1;
-  b:2;
-} /* comment */  
-  
-@a x {
-  .s{ }
-  .
+  color: green;
+};
+
+/* comment */
+@import 'asd';
+@media print {
+  .a {
+    color: blue;  /* comment */
+  }
+  /* end of rule */
+};
+
+.a {
+  color: green;
+}
+
+.test {
+    background: url(data:image/png;base64,...);
+    color: blue;
 }
