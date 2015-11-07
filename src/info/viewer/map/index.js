@@ -19,7 +19,13 @@ function build(root, map) {
     }
 
     function walk(node) {
-        var result = '<span class="node node-' + node.type + '" type="' + node.type + '" event-mouseenter="enter" event-mouseleave="leave">';
+        var classes = ['node', 'node-' + node.type];
+
+        if (node.invalid) {
+            classes.push('node-invalid');
+        }
+
+        var result = '<span class="' + classes.join(' ') + '" type="' + node.type + '" event-mouseenter="enter" event-mouseleave="leave">';
 
         switch (node.type) {
             case 'stylesheet':
