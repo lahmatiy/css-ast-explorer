@@ -21,6 +21,10 @@
     cursor: pointer;
 }
 
+.map [class~="node-invalid"]
+{
+    text-decoration: line-through;
+}
 .map [class~="node-stylesheet"]
 {
     background: rgb(234, 196, 247);
